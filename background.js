@@ -2,7 +2,7 @@
 
 chrome.webRequest.onBeforeRequest.addListener(
   ({ url = "" }) => {
-    const mark = "&url=";
+    const mark = "target=";
     const markIndex = url.indexOf(mark);
 
     if (markIndex > -1) {
@@ -13,7 +13,7 @@ chrome.webRequest.onBeforeRequest.addListener(
     }
   },
   {
-    urls: ["*://weixin110.qq.com/*", "*://support.weixin.qq.com/*"]
+    urls: ["*://link.zhihu.com/*"]
   },
   ["blocking"]
 );

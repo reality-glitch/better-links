@@ -1,13 +1,12 @@
 {
-  "name": "bye bye wechat",
-  "version": "0.2.3",
-  "description": "帮助去掉电脑版微信对某些网址的屏蔽",
+  "name": "better-links",
+  "version": "0.0.1",
+  "description": "Better Links",
   "author": "Ya Zhuang <zhuangya@gmail.com>",
   "permissions": [
     "webRequest",
     "webRequestBlocking",
-    "*://weixin110.qq.com/*",
-    "*://support.weixin.qq.com/*"
+    "*://link.zhihu.com/*"
   ],
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
   "manifest_version": 2,
