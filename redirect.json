@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://\\1/"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://link\\.zhihu\\.com/\\?target=https?%3A//([^&]+)",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]

@@ -1,16 +1,18 @@
 {
+  "manifest_version": 3,
   "name": "better-links",
   "version": "0.0.1",
   "description": "Better Links",
   "author": "Ya Zhuang <zhuangya@gmail.com>",
   "permissions": [
-    "webRequest",
-    "webRequestBlocking",
-    "*://link.zhihu.com/*"
+    "declarativeNetRequest"
   ],
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
-  "manifest_version": 2,
-  "background": {
-    "scripts": ["background.js"]
-  }
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "redirect_ruleset",
+      "enabled": true,
+      "path": "redirect.json"
+    }]
+  },
+  "host_permissions": ["*://*/*"]
 }
