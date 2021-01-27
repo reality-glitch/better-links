@@ -8,11 +8,15 @@
     "declarativeNetRequest"
   ],
   "declarative_net_request": {
-    "rule_resources": [{
-      "id": "redirect_ruleset",
-      "enabled": true,
-      "path": "redirect.json"
-    }]
+    "rule_resources": [
+      {
+        "id": "redirect_ruleset",
+        "enabled": true,
+        "path": "redirect.json"
+      }
+    ]
   },
-  "host_permissions": ["*://*/*"]
+  "host_permissions": [
+    "*://link.zhihu.com/*"
+  ]
 }
